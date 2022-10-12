@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pet Survey Form</h1>
+        <p>Thank you for taking the time to fill in our survey</p>
+    </header>
+
+    <main> 
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="James Smith" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="jamess@gmail.com">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" required placeholder="18" min="13" max="120">
+        <div>
+
+            <label for="dropdown">Which option best describes your current situation</label>
+            <select name="dropdown" id="dropdown">
+                <option value="student">Student</option>
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="retired">Retired</option>
+                
+            </select>
+        </div>
+        <div>
+
+            <label for="recommend">Would you recommend having a pet?</label>
+            
+            <label for="defintely">Defintely</label>
+            <input type="radio" id="defintely" value="0">
+            
+            <label for="no">No</label>
+            <input type="radio" id="no" value="1">
+            
+            <label for="no-pet">Don't have a pet</label>
+            <input type="radio" id="no-pet" value="2">
+        </div>
+
+        <div>
+
+            <label for="dropdown2">How many pets do you have?</label>
+            <select name="dropdown2" id="dropdown2">
+                <option value="none">None</option>
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+                <option value="four">Four</option>
+                <option value="five">Five</option>
+                <option value="more than five">More than five</option>
+                <option value="more than ten">More than ten</option>
+                
+            </select>
+        </div>
+
+        <div>
+            <label for="">What type pets do you have?</label>
+
+            <label for="cat">Cat</label>
+            <input type="checkbox" id="cat">
+
+            <label for="dog">Dog</label>
+            <input type="checkbox" id="dog">
+
+            <label for="snake">Snake</label>
+            <input type="checkbox" id="snake">
+
+            <label for="lizard">Lizard</label>
+            <input type="checkbox" id="lizard">
+
+            <label for="chicken">Chicken</label>
+            <input type="checkbox" id="chicken">
+
+            <label for="horse">Horse</label>
+            <input type="checkbox" id="horse">
+
+            <label for="fish">Fish</label>
+            <input type="checkbox" id="fish">
+
+            <label for="pig">Pig</label>
+            <input type="checkbox" id="pig">
+
+            <label for="other">Other</label>
+            <input type="checkbox" id="other">
+
+        </div>
+
+        <div>
+            
+            <textarea name="comments" id="" cols="30" rows="5">If selected "Other" let us know what type of pet you have</textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+    
+    </main>
+    
+</body>
+</html>
